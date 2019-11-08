@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/CMakeLists.txt.user
+/build/CMakeFiles/*
+/build/CMakeCache.txt
+/build/QtTest*
+/build/Makefile
+/build/cmake*
