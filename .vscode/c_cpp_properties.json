@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "~/Qt/5.13.0/**"
+                "/usr/include/x86_64-linux-gnu/qt5/**"
             ],
             "defines": [],
             "compilerPath": "clang++-7",

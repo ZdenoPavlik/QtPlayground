@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "qguiapplication": "cpp",
-        "qttest": "cpp"
+        "qttest": "cpp",
+        "qqmlapplicationengine": "cpp"
     }
 }
