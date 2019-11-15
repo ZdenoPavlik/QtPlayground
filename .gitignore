@@ -36,3 +36,4 @@
 /build/QtTest*
 /build/Makefile
 /build/cmake*
+/build/*
