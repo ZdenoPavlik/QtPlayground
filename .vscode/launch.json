@@ -28,7 +28,7 @@
             "name": "UnitTests",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/runUnitTests",
+            "program": "${workspaceFolder}/build/tests/runUnitTests",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 set(APPNAME "QtPlayground")
 project(${APPNAME} LANGUAGES CXX)
-enable_testing()
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -19,7 +18,6 @@ set(SOURCES
   src/main.cpp
 )
 
-# Production code
 add_executable(${APPNAME} ${SOURCES} resources/qml.qrc)
 
 target_compile_definitions(${APPNAME}
@@ -28,10 +26,4 @@ target_link_libraries(${APPNAME}
   PRIVATE Qt5::Core Qt5::Quick)
 
 # Tests
-find_package(Qt5Test REQUIRED)
-
-add_executable(runUnitTests tests/foo.cpp)
-add_test(Foo foo)
-
-target_link_libraries(runUnitTests Qt5::Test)
-#ADD_TEST( NAME SqLiteStorageTests COMMAND SqLiteStorageTests )
+add_subdirectory(tests)

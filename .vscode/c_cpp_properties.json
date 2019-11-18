@@ -3,9 +3,9 @@
         {
             "name": "Linux",
             "includePath": [
+                "${workspaceFolder}/build/tests/runUnitTests_autogen/include/*",
                 "${workspaceFolder}/**",
-                "/usr/include/x86_64-linux-gnu/qt5/**",
-                "${workspaceFolder}/build/runUnitTests_autogen/include/*"
+                "/usr/include/x86_64-linux-gnu/qt5/**"
             ],
             "defines": [],
             "compilerPath": "clang++-7",
