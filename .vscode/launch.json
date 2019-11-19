@@ -29,7 +29,9 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/tests/runUnitTests",
-            "args": [],
+            "args": [
+                "-v2"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

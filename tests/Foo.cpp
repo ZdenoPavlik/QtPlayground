@@ -9,12 +9,16 @@ class Foo : public QObject
 private slots:
     int initTestCase()
     {
-        std::cout << "-------------------- Starting FOO test cases -------------" << std::endl;
+        //std::cout << "-------------------- Starting FOO test cases -------------" << std::endl;
+        int i = 0;
+        i++;
     }
 
     void cleanupTestCase()
     {
-        std::cout << "-------------------- Cleaning up FOO test cases -------------" << std::endl;
+        //std::cout << "-------------------- Cleaning up FOO test cases -------------" << std::endl;
+        int i = 0;
+        i++;
     }
 
     void test1()

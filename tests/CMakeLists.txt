@@ -11,6 +11,7 @@ set(SOURCES
     main.cpp
     Foo.cpp
     BechmarkedFoo.cpp
+    DataDrivenFoo.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} AutoTest.h)
