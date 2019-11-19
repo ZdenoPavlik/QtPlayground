@@ -38,14 +38,6 @@ private slots: //must be private slots, otherwise not working.
         }
     }
 
-    void compareStrings()
-    {
-        QFETCH(QString, string);
-        QFETCH(QString, result);
-
-        QCOMPARE(string.toUpper(), result);
-    }
-
     //https://doc.qt.io/qt-5/qttestlib-tutorial2-example.html
     void compareStrings_data()
     {
@@ -55,12 +47,17 @@ private slots: //must be private slots, otherwise not working.
         const QString result = "HELLO";
 
         //Inserting test data
-        QTest::newRow("String testing - all lower") << "hello"
-                                                    << result;
-        QTest::newRow("String testing - mixed") << "Hello"
-                                                << result;
-        QTest::newRow("String testing - all upper") << "HELLO"
-                                                    << result;
+        QTest::newRow("String testing - all lower") << "hello" << result;
+        QTest::newRow("String testing - mixed") << "Hello" << result;
+        QTest::newRow("String testing - all upper") << "HELLO" << result;
+    }
+
+    void compareStrings()
+    {
+        QFETCH(QString, string);
+        QFETCH(QString, result);
+
+        QCOMPARE(string.toUpper(), result);
     }
 };
 

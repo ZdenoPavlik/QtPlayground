@@ -27,6 +27,9 @@ private slots:
 
         QVERIFY(true);
         QCOMPARE(1, 1);
+
+        QWARN("Hell yeah. Adding some warning message");
+        QVERIFY2((1 + 1) == 3, "Conditional reasonable message");
     }
 
     void test2()
